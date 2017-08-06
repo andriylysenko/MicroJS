@@ -5,7 +5,7 @@ function Modal(props) {
     var header = this.props.header;
     var content = this.props.content;
 
-  	return new Div({attr:{class:'modal'}})
+    return new Div({attr:{class:'modal'}})
       .addChildren([
         new Div({attr:{class:'modalContent'}})
           .addChildren([

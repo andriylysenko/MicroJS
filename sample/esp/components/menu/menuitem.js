@@ -6,7 +6,7 @@ function MenuItem(props) {
     if (this.props.active !== 'undefined' && this.props.active) {
       itemProps.attr.class += ' menu-item-active';
     }
-  	return new Div(itemProps)
+    return new Div(itemProps)
       .addChildren([new Text(this.props)]);
   }
 

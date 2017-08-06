@@ -13,7 +13,7 @@ function ActionCell(props) {
       cell = new Div(itemProps).addChildren([new Text({attr:this.props.attr})]);
     }
 
-  	return new Cell(cellProps)
+    return new Cell(cellProps)
       .addChildren(
         [
           cell

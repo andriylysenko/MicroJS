@@ -63,6 +63,6 @@ function SimpleTable(props) {
         [
           new TableBody(tableBodyPops).addChildren(rows)
         ]);
-  	return table;
+    return table;
   }
 }

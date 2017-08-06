@@ -16,7 +16,7 @@ function Menu(props) {
       menuItems.push(new MenuItem({attr:{'id':id, 'class':'menu-item div-container font20', 'text':this.menu[id].text}, 'active':this.menu[id].active, onclick:this.handleEvent}));
     }
 
-  	return new Div({attr:{'class':'menu'}})
+    return new Div({attr:{'class':'menu'}})
       .addChildren(menuItems);
   }
 

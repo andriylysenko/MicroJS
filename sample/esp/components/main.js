@@ -14,7 +14,7 @@ function Main(props) {
         this.rerender();
       }.bind(this));
     }
-  	return new Div({attr:{'id':'mainContainer', 'style':'width:100%'}})
+    return new Div({attr:{'id':'mainContainer', 'style':'width:100%'}})
       .addChildren([
         new Header({onApiHostChange:this.setApiHost, apiHosts:this.apiHosts, apiHost:this.apiHost}),
         this.apiHosts != null ? new MainContainer({'apiHost':this.apiHost}) : new Loading()

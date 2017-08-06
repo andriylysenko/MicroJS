@@ -32,7 +32,7 @@ function MainContainer(props) {
       }
     }
 
-  	return new Div({attr:{'class':'div-row', 'style':'height:90%;'}})
+    return new Div({attr:{'class':'div-row', 'style':'height:90%;'}})
       .addChildren([
         new Div({attr:{'class':'div-col border-right', 'style':'width:15%; margin-top: 5px; background:#F2EAED;'}})
           .addChildren([
