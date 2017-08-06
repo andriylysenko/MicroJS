@@ -1,0 +1,270 @@
+#loader {
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	z-index: 100;
+	width: 120px;
+	height: 120px;
+	margin: -75px 0 0 -75px;
+	border: 18px solid #888C46;
+	border-radius: 50%;
+	border-top: 18px solid #16235A;
+	border-bottom: 18px solid #16235A;
+	-webkit-animation: spin 2s linear infinite;
+	animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+.edit {
+	width: 100%;
+	font-size: 16px;
+	padding: 12px 20px 12px 8px;
+	border: 2px solid #A4A4BF;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #F2EAED;
+  margin: 20px 0;
+}
+
+.font20 {
+  font-size: 20px;
+  color: #16235A;
+}
+
+.font30 {
+  font-size: 30px;
+  color: #16235A;
+}
+
+.font40 {
+  font-size: 40px;
+  color: #16235A;
+}
+
+.font50 {
+  font-size: 50px;
+  color: #16235A;
+}
+
+.font60 {
+  font-size: 60px;
+  color: #16235A;
+}
+
+.font100 {
+  font-size: 100px;
+  color: #16235A;
+}
+
+.div-row {
+  float: top;
+  width: 100%;
+}
+
+.div-col {
+  float: left;
+  height: 100%;
+}
+
+.border-right {
+  box-shadow: 5px 0px 5px #888888;
+}
+
+.border-bottom {
+  box-shadow: 0px 5px 5px #888888;
+}
+
+.menu {
+  margin-top: 30px;
+}
+
+.menu-item-active {
+  border-left: solid;
+  //border-bottom: solid;
+  border-color: #888C46;
+  border-radius: 1px;
+}
+
+.menu-item {
+  color: #16235A;
+}
+
+.menu-item:hover {
+  border-left: solid;
+  border-color: #888C46;
+  border-radius: 1px;
+	background-color: #eadee3;
+}
+
+.div-container {
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+.div-content {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.div-well {
+  margin-right: 40px;
+  margin-left: 40px;
+  border: 1px solid #F2EAED;//#888C46;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px #888888;
+  background-color: #F2EAED;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+.div-well-white {
+  margin-right: 40px;
+  margin-left: 40px;
+  border: 1px solid #F2EAED;//#888C46;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px #888888;
+  background-color: white;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+.div-well-inv {
+  margin-right: 40px;
+  margin-left: 40px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+.action-white {
+	padding: 5px;
+	background-color: white;
+	color: #16235A;
+	font-size: 20px;
+	border: 3px solid #A4A4BF;
+	border-radius: 8px;
+  box-shadow: 3px 3px 3px #888888;
+	transition-duration: 0.4s;
+}
+
+.action {
+	padding: 5px;
+	background-color: #F2EAED;
+	color: #16235A;
+	font-size: 20px;
+	border: 3px solid #A4A4BF;
+	border-radius: 8px;
+  box-shadow: 3px 3px 3px #888888;
+	transition-duration: 0.4s;
+}
+
+.action:hover {
+	background-color: #888C46;
+	border: 3px solid #888C46;
+}
+
+.table {
+	border-collapse: collapse;
+  box-shadow: 5px 5px 5px #888888;
+	width: 100%;
+	border-left: none;
+	border-right: none;
+	font-size: 20px;
+	color: #16235A;
+}
+
+.table th, .table td {
+	text-align: left;
+}
+
+.table tr:hover {
+	background-color: #A4A4BF;
+}
+
+.table tr {
+	border-bottom: 1px solid #A4A4BF;
+}
+
+.modal {
+	display: block;
+	position: fixed;
+	z-index: 1;
+	padding-top: 15%;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0,0,0,0.4);
+}
+
+.modalContent {
+	position: relative;
+	--background-color: #F2EAED;
+  background-color: white;
+	margin: auto;
+	padding: 0;
+	border: 2px solid #A4A4BF;
+	width: 40%;
+  border-radius: 8px;
+  box-shadow: 3px 3px 3px #888888;
+	-webkit-animation-name: animatetop;
+	-webkit-animation-duration: 0.9s;
+	animation-name: animatetop;
+	animation-duration: 0.9s
+}
+
+@keyframes animatetop {
+	from {top:-300px; opacity:0}
+	to {top:0; opacity:1}
+}
+
+.modalHeader {
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  --height: 250px;
+  justify-content: space-between;
+  background-color: #F2EAED;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom: 2px solid  #A4A4BF;
+}
+
+.modalHeaderText {
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+.modalHeaderClose {
+  padding-top: 2.5px;
+  padding-right: 10px;
+  padding-bottom: 2.5px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.div-flex {
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}

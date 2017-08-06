@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Esp Manager</title>
+    <!--<link rel="stylesheet" type="text/css" href="file:///home/asl/dev/arduino/ESPManager/src/web/main.css">-->
+    <link rel="stylesheet" type="text/css" href="file:///home/asl/dev/arduino/ESPManager/src/web/html/app.css">
+
+    <script src="file:///home/asl/dev/javascript/MicroJS/src/http/http.js"></script>
+    <script src="file:///home/asl/dev/javascript/MicroJS/src/core/element.js"></script>
+
+    <script src="file:///home/asl/dev/javascript/MicroJS/src/components/dom/domelement.js"></script>
+    <script src="file:///home/asl/dev/javascript/MicroJS/src/components/dom/button.js"></script>
+    <script src="file:///home/asl/dev/javascript/MicroJS/src/components/dom/edit.js"></script>
+    <script src="file:///home/asl/dev/javascript/MicroJS/src/components/dom/select.js"></script>
+    <script src="file:///home/asl/dev/javascript/MicroJS/src/components/dom/option.js"></script>
+    <script src="file:///home/asl/dev/javascript/MicroJS/src/components/dom/div.js"></script>
+    <script src="file:///home/asl/dev/javascript/MicroJS/src/components/dom/span.js"></script>
+    <script src="file:///home/asl/dev/javascript/MicroJS/src/components/dom/hr.js"></script>
+    <script src="file:///home/asl/dev/javascript/MicroJS/src/components/dom/text.js"></script>
+    <script src="file:///home/asl/dev/javascript/MicroJS/src/components/dom/table.js"></script>
+
+    <script src="file:///home/asl/dev/javascript/MicroJS/sample/esp/components/menu/menu.js"></script>
+    <script src="file:///home/asl/dev/javascript/MicroJS/sample/esp/components/menu/menuitem.js"></script>
+
+    <script src="file:///home/asl/dev/javascript/MicroJS/sample/esp/components/loading/loading.js"></script>
+
+    <script src="file:///home/asl/dev/javascript/MicroJS/sample/esp/components/simpletable/simpletable.js"></script>
+    <script src="file:///home/asl/dev/javascript/MicroJS/sample/esp/components/simpletable/actioncell.js"></script>
+
+    <script src="file:///home/asl/dev/javascript/MicroJS/sample/esp/components/main.js"></script>
+    <script src="file:///home/asl/dev/javascript/MicroJS/sample/esp/components/header.js"></script>
+    <script src="file:///home/asl/dev/javascript/MicroJS/sample/esp/components/maincontainer.js"></script>
+
+    <script src="file:///home/asl/dev/javascript/MicroJS/sample/esp/components/modal/modal.js"></script>
+
+    <script src="file:///home/asl/dev/javascript/MicroJS/sample/esp/components/content/networks.js"></script>
+    <script src="file:///home/asl/dev/javascript/MicroJS/sample/esp/components/content/networkstatus.js"></script>
+    <script src="file:///home/asl/dev/javascript/MicroJS/sample/esp/components/content/mqttstatus.js"></script>
+    <script src="file:///home/asl/dev/javascript/MicroJS/sample/esp/components/content/pins.js"></script>
+    <script src="file:///home/asl/dev/javascript/MicroJS/sample/esp/components/content/dialogs/accesspoint.js"></script>
+    <script src="file:///home/asl/dev/javascript/MicroJS/sample/esp/components/content/dialogs/wifi.js"></script>
+    <script src="file:///home/asl/dev/javascript/MicroJS/sample/esp/components/content/dialogs/mqtt.js"></script>
+    <script src="file:///home/asl/dev/javascript/MicroJS/sample/esp/components/content/dialogs/pin.js"></script>
+    <script src="file:///home/asl/dev/javascript/MicroJS/sample/esp/components/content/dialogs/pinvalue.js"></script>
+
+    <script src="file:///home/asl/dev/javascript/MicroJS/sample/esp/components/puller/pinpuller.js"></script>
+
+    <script src="file:///home/asl/dev/javascript/MicroJS/sample/esp/api/devicediscover.js"></script>
+    <script src="file:///home/asl/dev/javascript/MicroJS/sample/esp/api/espapi.js"></script>
+    <script src="file:///home/asl/dev/javascript/MicroJS/sample/esp/api/espapimock.js"></script>
+
+    <script type="text/javascript">
+      window.onload = main;
+      function main() {
+        new Main().mount(document.getElementById("main"));
+      }
+    </script>
+  </head>
+  <body>
+    <div id="main">
+    </div>
+  </body>
+</html>
