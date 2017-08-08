@@ -9,7 +9,6 @@ function Pins(props) {
   }.bind(this)
 
   this.openValuePuller = function(row, key) {
-    alert(JSON.stringify(row));
     this.pin = new Modal({attr:{}, onclose:this.onModalClose, header:new Text({attr:{text:'Monitor ' + row.name + ' value'}}), content:new PinValue({attr:{}, espService:this.props.espService, pin:row, onSuccess:this.onModalClose})});
     this.rerender();
   }.bind(this)
