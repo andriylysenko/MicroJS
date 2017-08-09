@@ -4,7 +4,7 @@ function HTTP(url) {
 
   this.send = function(method, data) {
     return new Promise(function(resolve, reject) {
-      const httpRequest = new XMLHttpRequest();
+      var httpRequest = new XMLHttpRequest();
       httpRequest.open(method, url);
       httpRequest.onload = function() {
         resolve(JSON.parse(httpRequest.responseText));
